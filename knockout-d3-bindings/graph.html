@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="/Scripts/require.js" data-main="GraphMain"></script>
+</head>
+<body>
+    <svg width="1200" height="750">
+        <!-- ko foreach: graphData.linkArray -->
+            <line data-bind="attr: {x1: x1, y1: y1, x2: x2, y2: y2}" stroke-width="2" stroke="#aaa"></line>
+        <!-- /ko -->
+
+        <!-- ko foreach: graphData.nodeArray -->
+            <circle data-bind="attr: {r: radius, cx: xPos, cy: yPos}" fill="#5cb" stroke="#076" stroke-width="0.5"></circle>
+        <!-- /ko -->
+    </svg>
+</body>
+</html>
