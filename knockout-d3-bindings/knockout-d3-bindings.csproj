@@ -70,6 +70,7 @@
     <Content Include="GraphLayoutController.js" />
     <Content Include="GraphMain.js" />
     <Content Include="GraphViewModel.js" />
+    <None Include="Jenkinsfile" />
     <Content Include="NodeGenerator.js" />
     <Content Include="packages.config">
       <SubType>Designer</SubType>
